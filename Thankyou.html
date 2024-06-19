@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoinUs</title>
+    <link rel="stylesheet" href="JoinUsStyle.css">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!--Noto Music Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Music&display=swap" rel="stylesheet">
+
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+
+    <!-- Fjord Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<script src="JoinUsScript.js"></script>
+
+<body>
+
+    <audio id="background-music" loop>
+        <source src="BgMusic1.m4a" type="audio/mpeg">
+    </audio>
+
+    <!--Navbar-->
+    <div class="content">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="Home.html"><img src="logo.png" alt="Logo"></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><button><a href="OurStory.html">Our Story</a></li></button>
+                <li><button><a href="Events.html">Events</a></li></button>
+                <li><button id="music-button" onclick="changeIcon()">
+                    <i id="music-icon" class="fa fa-play fa-lg" aria-hidden="true"></i>
+                </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="thank-you-container">
+        <h1>Thank You for Joining Us!</h1>
+        <p>Your submission has been received. We appreciate your interest in joining our cause to keep the seas clean and protect the marine environment.</p>
+        <p>We will review your details and get back to you shortly. Together, we can make a significant impact and create a better future for our oceans.</p>
+        <p>If you have any questions, feel free to reach out to us at <a href="mailto:info@bersihlautikita.com">info@bersihlautikita.com</a>.</p>
+        <button onclick="goBack()">Back to Home</button>
+    </div>
+
+    <!-- Footer -->>
+    <div class = "footer">
+        <p>&copy; 2024 BersihLautKita.com</p>
+        <div class="social-media-icons">
+            <a href="https://id-id.facebook.com/"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: black;"></i></a>
+            <a href="https://x.com/?mx=2"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: black;"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: black;"></i></a>
+        </div>
+    </div>
+    
+</body>
+</html>

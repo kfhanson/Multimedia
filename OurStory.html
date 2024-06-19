@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="OurStory.css">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!--Noto Music Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Music&display=swap" rel="stylesheet">
+
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Our Story</title>
+
+    <!-- Fjord Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<script src="homeScript.js"></script>
+
+<body>
+    <audio id="background-music" loop>
+        <source src="BgMusic1.m4a" type="audio/mpeg">
+    </audio>
+
+    <!--Navbar-->
+    <div class="content">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="Home.html"><img src="logo.png" alt="Logo"></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><button><a href="OurStory.html">Our Story</a></li></button>
+                <li><button><a href="Events.html">Events</a></li></button>
+                <li><button id="music-button" onclick="changeIcon()">
+                    <i id="music-icon" class="fa fa-play fa-lg" aria-hidden="true"></i>
+                </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="our-story-section">
+            <h1>#GetToKnowUs</h1>
+            <div class="our-story-content">
+                <div class="backstory">
+                    <h2>Backstory</h2>
+                    <p>Beach Clean Indonesia was founded by a group of passionate individuals who were deeply concerned about the alarming rate of pollution and waste management issues affecting Indonesia's beaches. Recognizing the importance of preserving these natural wonders, we set out to create a platform where people could come together to make a positive impact. Our founders, all avid beachgoers and environmental enthusiasts, were inspired by the beauty and diversity of Indonesia's coastlines and were determined to take action against the growing problem of pollution. With a shared vision of a cleaner, healthier, and more sustainable future for Indonesia's beaches, we began organizing beach cleaning events and engaging with local communities to raise awareness about the importance of marine conservation.</p>
+                </div>
+                <div class="photo-ber">
+                    <h2>Vlog #1</h2>
+                    <p>Interviewing the Fisherman at Muara Angke Fish Market regarding the Indonesian ocean cleanliness condition</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MLn_HoJcKdo?si=rvDImYWv7jdZ6e7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="goals">
+                    <h2>Goals</h2>
+                    <ol>
+                        <li>Beach Cleaning Events: We organize regular beach cleaning events, often in collaboration with local authorities, schools, and community groups. These events not only help to clean the beaches but also serve as educational opportunities to raise awareness about the importance of marine conservation.</li>
+                        <li>Community Engagement: We work closely with local communities to educate them about the importance of waste management and the role they can play in protecting their beaches. This includes providing resources and support to help them implement sustainable waste management practices.</li>
+                        <li>Educational Campaigns: We design and distribute educational materials, such as posters, brochures, and social media campaigns, to raise awareness about the impact of pollution and the importance of marine conservation. We also partner with schools and universities to integrate environmental education into their curricula.</li>
+                    </ol>
+                </div>
+                <!-- <div class="photo-project">
+                    <h2>Photo project</h2>
+                    <img src="photo-project.jpg" alt="Photo project">
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->>
+    <div class = "footer">
+        <p>&copy; 2024 BersihLautKita.com</p>
+        <div class="social-media-icons">
+            <a href="https://id-id.facebook.com/"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: black;"></i></a>
+            <a href="https://x.com/?mx=2"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: black;"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: black;"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>

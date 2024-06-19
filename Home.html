@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!--Noto Music Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Music&display=swap" rel="stylesheet">
+
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+
+    <!-- Fjord Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<script src="homeScript.js"></script>
+
+<body>
+<!-- Background Video -->
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="Home BG.mp4" type="video/mp4">
+        </video>
+        <!-- <div class="overlay"></div> -->
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="BgMusic1.m4a" type="audio/mpeg">
+    </audio>
+
+    <!--Navbar-->
+    <div class="content">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="Home.html"><img src="logo.png" alt="Logo"></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><button><a href="OurStory.html">Our Story</a></li></button>
+                <li><button><a href="Events.html">Events</a></li></button>
+                <li><button id="music-button" onclick="changeIcon()">
+                    <i id="music-icon" class="fa fa-play fa-lg" aria-hidden="true"></i>
+                </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- #BersihLautKita -->
+    <div class="hashtagContainer">
+        <div class="hashtag">#BersihLautKita</div>
+        <div class="subtitle">
+            "We've taken out the first batch of clutter!<br>
+            Ready to tackle more whenever you need <br>
+            to clear some space!"
+        </div>
+        <div class="count">1,089</div>
+        <div class="description">TONS OF TRASH CLEANED</div>
+    </div>
+
+    <!-- Whale & Save the seas, Heal Indonesia -->
+    <div class="container">
+        <!-- Whale Picture -->
+        <div class="whale-container">
+            <img src="Whale.png" alt="Whale Image">
+        </div>
+
+        <!-- Text Section -->
+        <div class="text-container">
+            <h2>SAVE THE SEAS, HEAL INDONESIA</h2>
+            <p>"BersihLautKita.com is your gateway to making a tangible difference in ocean conservation. Our platform offers opportunities to scale up marine environmental initiatives with citizen-friendly tools for monitoring and cleanup. We turn collective resources into impactful results, aiming at sustainable development for our oceans' benefit."</p>
+            <p>"Join us and be a part of combating ocean pollution. Individuals and groups alike can take action against marine debris and protect our seas for generations to come."</p>
+            <a href="OurStory.html" class="explore-button">Explore More</a>
+        </div>
+    </div>
+
+    <!-- Highlight -->
+    <div class="highlight-section">
+        <h2>Highlights</h2>
+        <div class="highlight-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cV2gBU6hKfY?si=38uyLOwdOLmu0IY6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>Mr. Beast Clean our seas</p>
+    </div>
+    
+    <!-- Footer -->>
+    <div class = "footer">
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">BersihLautKita.com</span> is marked with <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt=""></a></p>
+        <div class="social-media-icons">
+            <a href="https://id-id.facebook.com/"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: black;"></i></a>
+            <a href="https://x.com/?mx=2"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: black;"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: black;"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>

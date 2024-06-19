@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EventsStyle.css">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!--Noto Music Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Music&display=swap" rel="stylesheet">
+
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Events</title>
+
+    <!-- Fjord Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<script src="homeScript.js"></script>
+<body>
+    <audio id="background-music" loop>
+        <source src="BgMusic1.m4a" type="audio/mpeg">
+    </audio>
+
+    <!--Navbar-->
+    <div class="content">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="Home.html"><img src="logo.png" alt="Logo"></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><button><a href="OurStory.html">Our Story</a></li></button>
+                <li><button><a href="Events.html">Events</a></li></button>
+                <li><button id="music-button" onclick="changeIcon()">
+                    <i id="music-icon" class="fa fa-play fa-lg" aria-hidden="true"></i>
+                </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div>
+            <h1>Join Our Upcoming Events</h1>
+        </div>
+        <section class="events-section">
+
+            <div class="timeline">
+                <div class="event">
+                    <div class="marquee">
+                        <div class="marquee-content">
+                          <img src="ancol1.jpg" alt="Image 1">
+                          <img src="ancol2.jpg" alt="Image 2">
+                          <img src="ancol3.jpg" alt="Image 3">
+                          <img src="ancol4.jpg" alt="Image 4">
+                          <!-- Repeat the images to create a seamless loop -->
+                          <img src="ancol1.jpg" alt="Image 1">
+                          <img src="ancol2.jpg" alt="Image 2">
+                          <img src="ancol3.jpg" alt="Image 3">
+                          <img src="ancol4.jpg" alt="Image 4">
+                        </div>
+                      </div>
+                    <div class="event-details">
+                        <h2>Ancol Beach Cleanup</h2>
+                        <p style="font-weight: bold;">13 June 2024</p>
+                        <p>Join us for a beach cleanup event at Ancol Beach! Help remove trash and debris from the shoreline and make a positive impact on the marine environment. Together, let's keep Ancol Beach beautiful!</p>
+                        <button type="submit"><a href="JoinUs.html">Join Event</a></button>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="marquee">
+                        <div class="marquee-content">
+                          <img src="ciliwung1.jpg" alt="Image 1">
+                          <img src="ciliwung2.jpg" alt="Image 2">
+                          <img src="ciliwung3.jpg" alt="Image 3">
+                          <img src="ciliwung4.jpeg" alt="Image 4">
+                          <!-- Repeat the images to create a seamless loop -->
+                          <img src="ciliwung1.jpg" alt="Image 1">
+                          <img src="ciliwung2.jpg" alt="Image 2">
+                          <img src="ciliwung3.jpg" alt="Image 3">
+                          <img src="ciliwung4.jpeg" alt="Image 4">
+                        </div>
+                      </div>
+                    <div class="event-details">
+                        <h2>Ciliwung River Cleanup</h2>
+                        <p style="font-weight: bold;">16 June 2024</p>
+                        <p>Help us revitalize the Ciliwung River by participating in a cleanup event! Remove waste and debris, promote a healthy environment, and raise awareness about the importance of this waterway. Be a part of the solution! Join the Ciliwung River Cleanup!</p>
+                        <button type="submit"><a href="JoinUs.html">Join Event</a></button>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="marquee">
+                        <div class="marquee-content">
+                          <img src="citarum1.jpg" alt="Image 1">
+                          <img src="citarum2.jpg" alt="Image 2">
+                          <img src="citarum3.jpg" alt="Image 3">
+                          <img src="citarum4.jpg" alt="Image 4">
+                          <!-- Repeat the images to create a seamless loop -->
+                          <img src="citarum1.jpg" alt="Image 1">
+                          <img src="citarum2.jpg" alt="Image 2">
+                          <img src="citarum3.jpg" alt="Image 3">
+                          <img src="citarum4.jpg" alt="Image 4">
+                        </div>
+                      </div>
+                    <div class="event-details">
+                        <h2>Citarum River Cleanup</h2>
+                        <p style="font-weight: bold;">20 June 2024</p>
+                        <p>The Citarum River Cleanup, a monumental effort to restore Indonesia's most polluted river, needs your help! Tons of waste are being removed, restoring natural habitats and improving life for local communities.</p>
+                        <button type="submit"><a href="JoinUs.html">Join Event</a></button>
+                    </div>
+                </div>
+                <span id="more">
+                    <div class="event">
+                        <div class="marquee">
+                            <div class="marquee-content">
+                              <img src="kensenden1.jpeg" alt="Image 1">
+                              <img src="kensenden2.jpg" alt="Image 2">
+                              <img src="kensenden3.webp" alt="Image 3">
+                              <img src="kensenden4.jpg" alt="Image 4">
+                              <!-- Repeat the images to create a seamless loop -->
+                              <img src="kensenden1.jpeg" alt="Image 1">
+                              <img src="kensenden2.jpg" alt="Image 2">
+                              <img src="kensenden3.webp" alt="Image 3">
+                              <img src="kensenden4.jpg" alt="Image 4">
+                            </div>
+                          </div>
+                        <div class="event-details">
+                            <h2>Kensenden Beach Cleanup</h2>
+                            <p style="font-weight: bold;">5 July 2024</p>
+                            <p>The Kensenden Beach Cleanup was a resounding success! A dedicated team of volunteers came together to remove trash and debris, leaving the beach looking pristine and rejuvenated.</p>
+                            <button type="submit"><a href="JoinUs.html">Join Event</a></button>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="marquee">
+                            <div class="marquee-content">
+                              <img src="labuan1.jpg" alt="Image 1">
+                              <img src="labuan2.jpg" alt="Image 2">
+                              <img src="labuan3.jpeg" alt="Image 3">
+                              <img src="labuan4.jpg" alt="Image 4">
+                              <!-- Repeat the images to create a seamless loop -->
+                              <img src="labuan1.jpg" alt="Image 1">
+                              <img src="labuan2.jpg" alt="Image 2">
+                              <img src="labuan3.jpeg" alt="Image 3">
+                              <img src="labuan4.jpg" alt="Image 4">
+                            </div>
+                          </div>
+                        <div class="event-details">
+                            <h2>Labuan Beach Cleanup</h2>
+                            <p style="font-weight: bold;">20 July 2024</p>
+                            <p>Labuan Beach enjoyed a renewed sense of sparkle thanks to a fantastic community beach cleanup event! Local residents, volunteers, and environmental organizations joined forces to remove waste and debris, making a significant impact.</p>
+                            <button type="submit"><a href="JoinUs.html">Join Event</a></button>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="marquee">
+                            <div class="marquee-content">
+                              <img src="brantas1.jpeg" alt="Image 1">
+                              <img src="brantas2.jpg" alt="Image 2">
+                              <img src="brantas3.webp" alt="Image 3">
+                              <img src="brantas4.jpg" alt="Image 4">
+                              <!-- Repeat the images to create a seamless loop -->
+                              <img src="brantas1.jpeg" alt="Image 1">
+                              <img src="brantas2.jpg" alt="Image 2">
+                              <img src="brantas3.webp" alt="Image 3">
+                              <img src="brantas4.jpg" alt="Image 4">
+                            </div>
+                          </div>
+                        <div class="event-details">
+                            <h2>Brantas River Cleanup</h2>
+                            <p>The Brantas River Cleanup was a resounding success! Thanks to the hard work of dedicated volunteers, a significant amount of waste was removed from the river, improving its health and the surrounding environment.</p>
+                            <button id="completed">Event Completed</button>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <button id="showmore" class="more-button" onclick="showMore()">More...</button>
+        </section>
+    </main>
+
+    <!-- Footer -->>
+    <div class = "footer">
+        <p>&copy; 2024 BersihLautKita.com</p>
+        <div class="social-media-icons">
+            <a href="https://id-id.facebook.com/"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: black;"></i></a>
+            <a href="https://x.com/?mx=2"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: black;"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: black;"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>

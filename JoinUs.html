@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoinUs</title>
+    <link rel="stylesheet" href="JoinUsStyle.css">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!--Noto Music Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Music&display=swap" rel="stylesheet">
+
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+
+    <!-- Fjord Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<script src="JoinUsScript.js"></script>
+
+<body>
+
+    <audio id="background-music" loop>
+        <source src="BgMusic1.m4a" type="audio/mpeg">
+    </audio>
+
+    <!--Navbar-->
+    <div class="content">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="Home.html"><img src="logo.png" alt="Logo"></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><button><a href="OurStory.html">Our Story</a></li></button>
+                <li><button><a href="Events.html">Events</a></li></button>
+                <li><button id="music-button" onclick="changeIcon()">
+                    <i id="music-icon" class="fa fa-play fa-lg" aria-hidden="true"></i>
+                </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- #BersihLautKita -->
+    <div class="hashtagContainer">
+        <div class="hashtag">Join The Wave of Change</div>
+    </div>
+
+    <!-- Join The Wave -->
+    <div class="join-section">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="event">Event:</label>
+            <select name="event" id="event">
+                <option value="ancol">Ancol Beach Cleanup</option>
+                <option value="ciliwung">Ciliwung River Cleanup</option>
+                <option value="citarum">Ciitarum River Cleanup</option>
+                <option value="kensenden">Kensenden Beach Cleanup</option>
+                <option value="labuan">Labuan Beach Cleanup</option>
+            </select>
+            <label for="description">Personal Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+            <button type="submit"><a href="Thankyou.html">Submit</a></button>
+        </form>
+    </div>
+
+    <!-- <div id="thank-you-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Thank You!</h2>
+            <p>Your submission has been received.</p>
+            <button id="close-overlay">Close</button>
+        </div>
+    </div> -->
+
+    <!-- Footer -->>
+    <div class = "footer">
+        <p>&copy; 2024 BersihLautKita.com</p>
+        <div class="social-media-icons">
+            <a href="https://id-id.facebook.com/"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: black;"></i></a>
+            <a href="https://x.com/?mx=2"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: black;"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: black;"></i></a>
+        </div>
+    </div>
+    
+</body>
+</html>
